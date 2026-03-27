@@ -28,6 +28,59 @@ A simple Flask web application that allows users to search for geo locations usi
 - Select from the list of matching locations.
 - You will be redirected to Google Maps showing the selected location.
 
-## Note
+## Publishing to GitHub
 
-This app uses OpenStreetMap Nominatim API, which is free but has rate limits (1 request per second). For heavy usage, consider a paid API.
+1. Initialize Git repository (if not already done):
+   ```
+   git init
+   ```
+
+2. Add files and commit:
+   ```
+   git add .
+   git commit -m "Initial commit: Geo location search app"
+   ```
+
+3. Create a new repository on GitHub:
+   - Go to [GitHub.com](https://github.com) and log in.
+   - Click "New repository".
+   - Name it (e.g., `geo_location_codelab`).
+   - Make it public or private.
+   - Do not initialize with README or .gitignore.
+   - Click "Create repository".
+
+4. Add remote and push:
+   ```
+   git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+   git push -u origin main
+   ```
+   - Replace `YOUR_USERNAME` and `YOUR_REPO_NAME` with your actual GitHub details.
+   - **Authentication**: GitHub requires a Personal Access Token (PAT) instead of your password.
+     - Go to [GitHub Settings > Developer settings > Personal access tokens > Tokens (classic)](https://github.com/settings/tokens).
+     - Click "Generate new token (classic)".
+     - Give it a name (e.g., "Geo App Push").
+     - Select scopes: Check "repo" (full control of private repositories).
+     - Click "Generate token" and copy it.
+     - When prompted for password during push, paste the token (not your GitHub password).
+
+## Cloning the Repository
+
+To clone and run this app on another machine or directory:
+
+1. Open a terminal and navigate to your desired directory:
+   ```
+   cd /path/to/your/directory
+   ```
+
+2. Clone the repository:
+   ```
+   git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+   ```
+   - Replace `YOUR_USERNAME` and `YOUR_REPO_NAME` with the actual values (e.g., `kmkchakravarthy/geo_location_codelab`).
+
+3. Navigate into the cloned directory:
+   ```
+   cd YOUR_REPO_NAME
+   ```
+
+4. Follow the Setup steps above to run the app.
